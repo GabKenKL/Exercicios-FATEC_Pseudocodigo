@@ -1,0 +1,12 @@
+algoritmo ex5
+declarar.
+    vetor[20], somatória: int
+início.
+    para(i = 0; i < 20; i++) faça
+        ler vetor[i];
+    fim.para;
+    para (i = 0; i < 20; i++) faça
+        somatória = somatória + (vetor[i] - vetor[20-i]);
+    fim.para;
+    mostrar somatória;
+fim.

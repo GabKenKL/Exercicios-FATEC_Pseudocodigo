@@ -1,0 +1,14 @@
+Algoritmo Ex3
+declarar.
+    VT1[3], VT2[3], VT3[6]: int;
+início.
+    para (i = 0; i < 3; i++) faça
+        ler VT1[[i];
+        ler VT2[i];
+        VT3[i] = VT1[i];
+        VT3[i + 3] = VT2[i];
+    fim.para;
+    para (i = 0; i < 6; i++) faça
+        mostrar VT3[i];
+    fim.para;
+fim.

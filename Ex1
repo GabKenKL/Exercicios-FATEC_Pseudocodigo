@@ -1,0 +1,15 @@
+início.
+    para (i = 0; i < 50; i++) faça
+        ler vetor[i];
+        se (vetor[i] >= 10 e vetor <= 200) então
+            media = media + vetor[i];
+            cta = cta + 1;
+        fim.se;
+        se (vetor[i] % 2 == 1) então
+            soma = soma + vetor[i];
+        fim.se;
+    fim.para;
+    media = media / cta;
+    mostra media;
+    mostra soma;
+fim.

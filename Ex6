@@ -1,0 +1,44 @@
+algoritmo ex6
+declarar.
+    vetor[20], auxiliar, valor: real;
+    para (i = 0; i < 20; i++) faça
+        ler vetor[i];
+    fim.para
+
+    //ordenação
+    para (i = 0; i < 20; i++) faça
+        para (j = i + 1; j < 20; j++) faça
+            se (vetor[i] > vetor[j]);
+                auxiliar = vetor[i];
+                vetor[i] = vetor[j];
+                vetor[j] = auxiliar;
+            fim.se;
+        fim.para;
+    fim.para;
+    para (i = 0; i < 20; i++) faça
+        mostrar vetor[i];
+    fim.para;
+
+    //pesquisa binária
+    ler valor;
+    se (vetor[10] > valor) então
+        para (i = 0; i < 10; i++) faça
+            se (valor = vetor[i]) então
+                mostrar ('Esse valor existe.');
+            fim.se
+            se (valor != vetor[9] e i = 9) então
+                mostrar ('Esse valor não existe no vetor.');
+            fim.se;
+        fim.para;
+    fim.se;
+    se (vetor[10] < valor) então:
+        para (i = 10; i < 20; i++) faça
+            se (valor = vetor[i]) então
+                mostrar ('Esse valor existe.');
+            fim.se;
+            se (valor != vetor[19] e i = 19) então
+                mostrar ('Esse valor não existe no vetor.');
+            fim.se;
+        fim.para;
+    fim.se;
+fim.

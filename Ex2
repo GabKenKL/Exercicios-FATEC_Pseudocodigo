@@ -1,0 +1,21 @@
+algoritmo ex2
+declarar.
+    vetor[100], maior, menor, cta: inteiro;
+    media: decimal;
+início.
+    para (i = 0; i < 100; i++) faça
+        ler vetor[i];
+        se (vetor[i] > maior) então
+            maior = vetor[i];
+        fim.se;
+        se (vetor[i] < menor) então
+            menor = vetor[i];
+        fim.se;
+        media = media + vetor[i];
+        cta = cta + 1;
+    fim.para;
+    media = media / cta;
+    mostra menor;
+    mostra maior;
+    mostra media;
+fim.

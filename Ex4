@@ -1,0 +1,25 @@
+algoritmo ex4
+declarar.
+    vetor[30], media, notas_acima: real;
+    cta: int;
+inicio.
+    para (i = 0; i < 30; i++) faça
+        ler vetor[i];
+        media = vetor[i] + media;
+        cta = cta + 1;
+    fim.para;
+    media = media / cta;
+    mostrar ('A media do grupo é de' , media);
+    para (i = 0; i < 30; i++) faça
+        se (vetor[i] > media) então
+            notas_acima = notas_acima + 1;
+        fim.se;
+    fim.para;
+    mostrar ('A quantidade de notas acima da media equivale a' , notas_acima);
+    para (i = 0; i < 30; i++) faça
+        se (vetor[i] < media) então
+            posição = i;
+            mostrar posição;
+        fim.se;
+    fim.para;
+fim.
